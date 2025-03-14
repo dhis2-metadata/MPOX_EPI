@@ -48,7 +48,17 @@ The aggregate COVIDVAC package includes:
 Similar to the [C19 aggregate toolkit](https://docs.dhis2.org/en/implement/health/covid-19-vaccine-delivery/covac-aggregate/design.html#1-introduction) for vaccine distribution, the packaged dataset is organized in a flat structure, divided into three key sections based on at-risk groups and targeted vaccination efforts. The global toolkit highlights three primary groups: Health Care Workers (HCWs), Veterinarians and Animal Handlers—given the zoonotic nature of the Mpox virus—and a generic "Other" population category. This "Other" category can either represent the broader population or be customized and expanded to include additional target groups requiring more detailed monitoring. The data is mutually exclusive among the different sections, meaning that the data inserted in this section represent all the people who are not categorized as HCWs or Veterinarians/Animal handlers.
 This flexible design allows countries to adapt the dataset structure to their specific needs, ensuring comprehensive tracking across all relevant risk groups.
 
+> 🚨 **IMPORTANT NOTE:**
+> The updated guidelines recommend the following terminology changes:
+> - Use “Health Workers/Frontline Workers” instead of “Health Care Workers”.
+> - Replace “Other Population” with “Other At-Risk Populations”.
+> - Remove “Veterinarians/Animal Handlers” from the list.
+> - Add “Contacts of Mpox Cases” as a new category.
+
 All sections relevant to the vaccine vaccine administration are disaggregated by age groups (0-4, 5-11, 12-17, 18-59, 60+ years), and by sex (female/male). Disaggregations can be adapted locally based on necessity and protocols.
+
+> 🚨 **IMPORTANT NOTE:**
+> The new guidelines changed the age range for the first dose and second dose to <1, 1-4, 5-11, 12-17, 18-59, 60+ years
 
 The dataset is designed to accommodate a single vaccine. However, if additional vaccines become available for mpox immunization efforts, it is recommended to follow a similar approach to the C19 module by using [attributes](https://docs.dhis2.org/en/implement/health/covid-19-vaccine-delivery/covac-aggregate/design.html#4-datasets) to differentiate between the various vaccines.
 
@@ -100,6 +110,13 @@ The vaccination stage is a repeatable stage that can be used for all the doses a
 The **“Risk groups and underlying conditions”** section is used to flag whether the person belongs to a frontline group that puts them at a higher risk than the rest of the population. If “NO” the person is flagged as “Other” when it comes to PIs and also the aggregate dataset as shown above.
 The program includes by default **HCWs, Animal handlers, and Veterinarians** - the latter being of particular importance for mpox due to the zoonotic pattern of the disease itself. Implementers can edit the options list and remove/edit/add options as relevant to the local context.
 
+> 🚨 **IMPORTANT NOTE:**
+> The updated guidelines recommend the following terminology changes:
+> - Use “Health Workers/Frontline Workers” instead of “Health Care Workers”.
+> - Replace “Other Population” with “Other At-Risk Populations”.
+> - Remove “Veterinarians/Animal Handlers” from the list.
+> - Add “Contacts of Mpox Cases” as a new category.
+
 The gestational status appears only if the patient is a female.
 
 The underlying conditions are added as possible counterindications for some vaccines. The default configuration includes **“Malignancy”, “Immunosuppression” and “Cardiovascular disease”**, but the DEs can be edited as needed. The Program currently does not include any alert associated with any of the conditions, but implementers can add those to either flag the possible counterindication or to block the data entry.
@@ -108,7 +125,13 @@ The underlying conditions are added as possible counterindications for some vacc
 
 This is inherited from the C19 programme, where the previous infection was a deterrent for the administration of a dose. There is no PR associated with this DE and it is rather kept as a placeholder in case the tracker is used also for the immunisation efforts of other endemic-prone diseases that carry the same limitation pattern associated with previous infection. Implementers can easily remove this question if needed given teh lack of associated dependencies. 
 
+> 🚨 **IMPORTANT NOTE:**
+> For "Vaccine given", add "MVA-BN" so that it is listed as “MVA-BN (JYNNEOS/Imvanex/Imvamune)”. This ensures clarity by explicitly naming the vaccine along with its commonly known brand names.
+
 ![Vaccine administration](resources/image/eirmpox_005.png)
+
+> 🚨 **IMPORTANT NOTE:**
+> Consider renaming "Total number of doses required for this vaccine product" into "Total number of doses required for this vaccine product based on national recommendations".
 
 The vaccination information collects the key info of the vaccine, with its manufacturer, brand, batch number, and expiry date. The default configuration of this tracker takes into account just the mpox vaccine in its different nomenclatures, though it can be considered as a placeholder for the possibility of the addition of other vaccines for more epidemic-prone diseases. 
 
