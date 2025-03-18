@@ -51,7 +51,7 @@ This flexible design allows countries to adapt the dataset structure to their sp
 > 🚨 **IMPORTANT NOTE:**
 > The updated guidelines recommend the following terminology changes:
 > - Use “Health Workers/Frontline Workers” instead of “Health Care Workers”.
-> - Replace “Other Population” with “Other At-Risk Populations”.
+> - Replace “Other Population” with “Other At-Risk Populations”. Other options can include “Sex workers” “Gay, bisexual or other men who have sex with men (MSM), individuals with multiple sexual > partners”; “Other”
 > - Remove “Veterinarians/Animal Handlers” from the list.
 > - Add “Contacts of Mpox Cases” as a new category.
 
@@ -113,7 +113,7 @@ The program includes by default **HCWs, Animal handlers, and Veterinarians** - t
 > 🚨 **IMPORTANT NOTE:**
 > The updated guidelines recommend the following terminology changes:
 > - Use “Health Workers/Frontline Workers” instead of “Health Care Workers”.
-> - Replace “Other Population” with “Other At-Risk Populations”.
+> - Replace “Other Population” with “Other At-Risk Populations”. Other options can include “Sex workers” “Gay, bisexual or other men who have sex with men (MSM), individuals with multiple sexual > partners”; “Other”
 > - Remove “Veterinarians/Animal Handlers” from the list.
 > - Add “Contacts of Mpox Cases” as a new category.
 
